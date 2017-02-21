@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Diary</title>
+    <!--js-->
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-route.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-mocks.js"></script>
+    <script type="text/javascript" src="vendor/angular-storage.js"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
+    <script type="text/javascript" src="javascript/e2e.js"></script>
+    <script type="text/javascript" src="javascript/controllers/LoginController.js"></script>
+    <script type="text/javascript" src="javascript/controllers/HomeController.js"></script>
+    <script type="text/javascript" src="javascript/models/Diary.js"></script>
+    <script type="text/javascript" src="javascript/services/loginService.js"></script> 
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500"> -->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/bookTitle.png">
+    <!--     <link rel="shortcut icon" href="vendor/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="vendor/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="vendor/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="vendor/ico/apple-touch-icon-57-precomposed.png"> -->
+</head>
+
+<body ng-app="myDiaryE2E">
+    <ng-view></ng-view>
+</body>
+
+</html>

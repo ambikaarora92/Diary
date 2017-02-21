@@ -1,0 +1,40 @@
+<div class="top-content container-fluid">
+            <div class="inner-bg">
+                <!-- <div class="container-fluid"> -->
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2 text">
+                            <h1 align="center">Diary</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-sm-offset-6 form-box">
+
+                          <div class="form-top">
+                          <button ng-click="reset()" class="reset">&times</button>
+                            <div class="form-top-left">
+                              <h3>Login to our site</h3>
+                                <p>Enter your username and password</p>
+                            </div>
+                            <div class="form-top-right">
+                              <i class="fa fa-lock"></i>
+                            </div>
+                            </div>
+                            <div class="form-bottom">
+                          <form name="form" class="form-textField" ng-submit="validateLogin(diary)">
+                            <div class="form-group">
+                              <label for="form-username">Username</label>
+                                <input type="text" name="form-username" placeholder="Username" class=" form-control" ng-model="diary.username" required>
+                              </div>
+                              <div class="form-group">
+                                <label for="form-password">Password</label>
+                                <input type="password" name="form-password" placeholder="Password" class="form-control" ng-model="diary.password" required>
+                              </div>
+                              <label ng-show="invalidCredentials" class="invalidLabel">Username / Password is incorrect</label>
+                              <button type="submit" class="btn btn-info" ng-disabled=form.$invalid>Sign in!</button>
+                          </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
