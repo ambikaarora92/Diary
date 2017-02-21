@@ -1,7 +1,7 @@
 var myApp=angular.module('myDiary', ['ngRoute','ngStorage']);
 myApp.config(['$routeProvider',function($routeProvider) {
   $routeProvider.when('/',{
-    templateUrl:'partials/login.html',
+    templateUrl:'app/partials/login.html',
     controller:'LoginController'
   })
 
@@ -13,7 +13,7 @@ myApp.config(['$routeProvider',function($routeProvider) {
         }
       }
     },
-    templateUrl:'partials/home.html',
+    templateUrl:'app/partials/home.html',
     controller:'HomeController'
   });
 
